@@ -156,6 +156,7 @@ Or you can even change your HOME environment variable:
 * Cyrus IMAP v2.3.13
 * [Dovecot][dove] 1.2.9
 * [Gmail][gmail] (2013-03)
+* [Openmailbox][openmailbox] (2015)
 
 ## Misc ##
 
@@ -168,4 +169,5 @@ Or you can even change your HOME environment variable:
 [tango]: http://tango.freedesktop.org/Tango_Desktop_Project
 [dove]: http://www.dovecot.org/
 [gmail]: http://en.wikipedia.org/wiki/Gmail
+[openmailbox]: https://www.openmailbox.org
 
