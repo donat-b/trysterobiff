@@ -23,6 +23,8 @@ message (Using Qt CONFIG: $$CONFIG)
 
 TARGET = trysterobiff
 
+VPATH += ./sources
+INCLUDEPATH += ./sources
 HEADERS += tray.hh client.hh name.hh external.hh infobox.hh dummy.hh decode.hh
 SOURCES += gui.cc tray.cc client.cc external.cc infobox.cc dummy.cc decode.cc
 
