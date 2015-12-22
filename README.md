@@ -31,25 +31,17 @@ I appreciate feedback and comments:
 You need to have Qt installed, version >= 4.3. It was tested with version 4.6.
 It should also compile and run with Qt 5.
 
-Generate the Makefile via:
+```sh
+    mkdir _build && cd _build
+    qmake "CFG=release" ../gui.pro
+    make
 
-    $ qmake gui.pro
+    # The resulting binary can be called via:
+    ./trysterobiff &
+```
 
-Or
-
-    $ qmake "CFG=release" gui.pro
-
-(see gui.pro for more alternatives)
-
-On some systems, the Qt version is encoded in the qmake name, e.g. `qmake-qt4` or `qmake-qt5`.
-
-And then compile it via:
-
-    $ make
-
-The resulting binary can be called via:
-
-    $ ./trysterobiff &
+Gentoo **ebuild** can be found here:
+https://github.com/donat-b/procyon
 
 ## Config ##
 
