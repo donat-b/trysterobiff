@@ -25,6 +25,10 @@ I appreciate feedback and comments:
     mail@georg.so
     gsauthof@sdf.lonestar.org
 
+## Screenshot ##
+
+![screenshot](https://raw.githubusercontent.com/donat-b/trysterobiff/master/screenshots.png)
+
 
 ## Install ##
 
