@@ -45,7 +45,7 @@ int main(int argc, char **argv)
   }
   QCoreApplication::setOrganizationName(IMAPBIFFNAME);
   QCoreApplication::setApplicationName(IMAPBIFFNAME);
-  QSettings::setDefaultFormat(QSettings::IniFormat);
+  QSettings::setDefaultFormat(QSettings::NativeFormat);
   QSettings s;
   QString cert = s.value("cert").toString();
   if (cert != "") {

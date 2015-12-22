@@ -58,15 +58,15 @@ available options.
 
 Copy it to the right location:
 
-    $ cp trysterobiff.ini $HOME/.config/trysterobiff.ini
+    $ cp trysterobiff.conf $HOME/.config/trysterobiff.conf
 
 Restrict the read access:
 
-    $ chmod 600 $HOME/.config/trysterobiff.ini
+    $ chmod 600 $HOME/.config/trysterobiff.conf
 
 And adjust the default settings (hostname etc.):
 
-    $ vim $HOME/.config/trysterobiff.ini
+    $ vim $HOME/.config/trysterobiff.conf
 
 
 ## SSL ##
@@ -138,7 +138,7 @@ accounts), just specify an alternative config path:
 
     $ trysterobiff --settings $HOME/.config/accountb
 
-In the above call $HOME/.config/accountb/trysterobiff.ini is used as config file.
+In the above call $HOME/.config/accountb/trysterobiff.conf is used as config file.
 
 Alternatively, you can set the XDG_CONFIG_HOME environment variable, e.g.:
 
@@ -148,7 +148,7 @@ Or you can even change your HOME environment variable:
 
     $ HOME=/home/juser/accountb ./trysterobiff
 
-(for using /home/juser/accountb/.config/trysterobiff.ini)
+(for using /home/juser/accountb/.config/trysterobiff.conf)
 
 
 ## Tested IMAP-Servers ##

@@ -51,7 +51,7 @@ void help(const char *prog)
     "\n"
    //--------------------------------------------------------------------------------
     "  --help            this screen\n"
-    "  --settings DIR    read trysterobiff.ini from DIR\n"
+    "  --settings DIR    read trysterobiff.conf from DIR\n"
     "  --debug           print diagnostic output to stderr\n\n";
    //--------------------------------------------------------------------------------
 }
@@ -106,9 +106,9 @@ static void setup_settings(const Options &opts)
   QCoreApplication::setOrganizationName(IMAPBIFFNAME);
   QCoreApplication::setApplicationName(IMAPBIFFNAME);
 
-  QSettings::setDefaultFormat(QSettings::IniFormat);
+  QSettings::setDefaultFormat(QSettings::NativeFormat);
   if (!opts.settings_path.isEmpty()) {
-    QSettings::setPath(QSettings::IniFormat, QSettings::UserScope,
+    QSettings::setPath(QSettings::NativeFormat, QSettings::UserScope,
         opts.settings_path);
   }
   QSettings s;
@@ -118,7 +118,7 @@ static void setup_settings(const Options &opts)
       cerr << "$HOME/.config";
     else
       cerr << opts.settings_path.toUtf8().constData();
-    cerr << "/" IMAPBIFFNAME ".ini,\n"
+    cerr << "/" IMAPBIFFNAME ".conf,\n"
       "chmod 600 it and adjust the settings.\n";
     exit(6);
   }
